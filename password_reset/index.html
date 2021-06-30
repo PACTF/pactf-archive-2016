@@ -10,7 +10,7 @@
 <meta name="author" content="PACTF">
 <title>
     
-  Login — 
+  Password Reset - 
       PACTF
     
 
@@ -41,12 +41,12 @@
 <link href="../static/ctflex/css/base.6cd36a731be3.css" rel="stylesheet">
 <link href="../static/ctflex/css/logo.3e253493d8af.css" rel="stylesheet">
 
-<script src="../static/ctflex/js/lib/jquery.min.e40ec2161fe7.js" type="665af00a22793c1f95dd3d18-text/javascript"></script>
-<script src="../static/ctflex/jquery-ui-1.11.4/jquery-ui.min.d935d506ae9c.js" type="665af00a22793c1f95dd3d18-text/javascript"></script>
-<script src="../static/ctflex/js/lib/jquery.cookie.min.4412bf802310.js" type="665af00a22793c1f95dd3d18-text/javascript"></script>
-<script src="../static/ctflex/bootstrap-3.3.6-dist/js/bootstrap.min.c5b5b2fa19bd.js" type="665af00a22793c1f95dd3d18-text/javascript"></script>
-<script src="../static/ctflex/js/lib/notify.min.08ec3790d1fb.js" type="665af00a22793c1f95dd3d18-text/javascript"></script>
-<script type="665af00a22793c1f95dd3d18-text/javascript" src="../static/ctflex/js/ajax_utils.10a690fa3825.js"></script>
+<script src="../static/ctflex/js/lib/jquery.min.e40ec2161fe7.js" type="67b01045ab4459f0ab8446e0-text/javascript"></script>
+<script src="../static/ctflex/jquery-ui-1.11.4/jquery-ui.min.d935d506ae9c.js" type="67b01045ab4459f0ab8446e0-text/javascript"></script>
+<script src="../static/ctflex/js/lib/jquery.cookie.min.4412bf802310.js" type="67b01045ab4459f0ab8446e0-text/javascript"></script>
+<script src="../static/ctflex/bootstrap-3.3.6-dist/js/bootstrap.min.c5b5b2fa19bd.js" type="67b01045ab4459f0ab8446e0-text/javascript"></script>
+<script src="../static/ctflex/js/lib/notify.min.08ec3790d1fb.js" type="67b01045ab4459f0ab8446e0-text/javascript"></script>
+<script type="67b01045ab4459f0ab8446e0-text/javascript" src="../static/ctflex/js/ajax_utils.10a690fa3825.js"></script>
 </head>
 <body>
 
@@ -233,7 +233,7 @@ News
 <li><a href="../chat/index.html">Chat</a></li>
 </ul>
 </li>
-<li><a href="index.html">Login</a></li>
+<li><a href="../login/index.html">Login</a></li>
 <li><a href="../register/index.html">Register</a></li>
 </ul>
 </div>
@@ -243,47 +243,31 @@ News
 <header class="page-title">
 <div class="container">
 <h1>
-Login
+Password Reset
 </h1>
 </div>
 </header>
 <div id="content">
-<p>If you don't already have an account, <a href="../register/index.html">sign up</a>!</p>
-<form method="post" class="form-horizontal" role="form">
+<form class="form-horizontal" method="post" role="form">
 <input type='hidden' name='csrfmiddlewaretoken' value='8ynHspFO3eFwGxH3eIQzfr6xEbjfulol' />
+<p>Forgot your password? Enter your email address below, and we'll email you instructions for setting a new one.</p>
 <div class="form-group row  ">
-<label for="id_username" class="control-label col-sm-2 col-sm-offset-2">
-Username*
+<label for="id_email" class="control-label col-sm-2 col-sm-offset-2">
+Email*
 </label>
 <div class="field-input-container col-sm-4">
-<input class="form-control" id="id_username" maxlength="254" name="username" required="" type="text" />
+<input class="form-control" id="id_email" maxlength="254" name="email" required="" type="email" />
 </div>
 <div class="clearfix"></div>
 <div class="field-other-container col-sm-4 col-sm-offset-4">
 <div class="help-block"></div>
 </div>
 </div>
-<div class="form-group row  ">
-<label for="id_password" class="control-label col-sm-2 col-sm-offset-2">
-Password*
-</label>
-<div class="field-input-container col-sm-4">
-<input class="form-control" id="id_password" name="password" required="" type="password" />
-</div>
-<div class="clearfix"></div>
-<div class="field-other-container col-sm-4 col-sm-offset-4">
-<div class="help-block"></div>
-</div>
-</div>
-<input type="hidden" name="next" value="" />
-<div class="text-center form-group">
-<div class="btn-group" role="group">
-<input class="btn btn-primary" type="submit" value="Log in" />
-<a role="button" href="../password_reset/index.html" type="button" class="btn btn-default">Reset Password</a>
 <div class="clearfix hidden-xs"></div>
+<div class="text-center">
+<input class="btn btn-primary" type="submit" value="Reset my password" />
 </div>
-</div>
-<script type="665af00a22793c1f95dd3d18-text/javascript">document.getElementById("id_username").focus();</script>
+<script type="67b01045ab4459f0ab8446e0-text/javascript">document.getElementById("id_email").focus();</script>
 </form>
 </div>
 
@@ -318,11 +302,11 @@ Password*
 </div>
 </footer>
 
-<script type="665af00a22793c1f95dd3d18-text/javascript">
+<script type="67b01045ab4459f0ab8446e0-text/javascript">
     (function () {
       window.js_context = {};
       document.dispatchEvent(new Event('js_context'));
     })();
   </script>
-<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="665af00a22793c1f95dd3d18-|49" defer=""></script></body>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="67b01045ab4459f0ab8446e0-|49" defer=""></script></body>
 </html>
